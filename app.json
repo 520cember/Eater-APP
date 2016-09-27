@@ -4,7 +4,7 @@
     "pages/login/login",
     "pages/index/index",
     "pages/mine/mine",
-    "pages/test/test",
+    "pages/new/new",
     "pages/newDetail/newDetail"
   ],
   "tabBar": {
@@ -16,7 +16,7 @@
         "selectedIconPath": "pages/img/tab_select_icon.png"
       },
       {
-        "pagePath": "pages/test/test",
+        "pagePath": "pages/new/new",
         "text": "菜谱",
         "iconPath": "pages/img/tab_icon.png",
         "selectedIconPath": "pages/img/tab_select_icon.png"
@@ -31,8 +31,8 @@
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   }
 }
