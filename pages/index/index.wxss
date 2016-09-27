@@ -3,12 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:80%;
 }
 .btnQueryPhone{
-margin-top: 200px;
+  width: 60%;
+ margin-top: 160rpx;
 }
 .ipt_phone{
-  margin-top: 30px;
+ width: 80%;
+ margin: 50px auto;
+ border-bottom: 1px solid #ccc;
 }
 .query_result{
   margin-top: 30px;

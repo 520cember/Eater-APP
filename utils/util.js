@@ -16,6 +16,18 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
-module.exports = {
-  formatTime: formatTime
+//手机号码是否正确
+function checkPhone(phone){ 
+    if(!(/^1[34578]\d{9}$/.test(phone))){ 
+        return false; 
+    } else{
+      return true;
+    } 
 }
+
+//检查的方法
+module.exports = {
+  formatTime: formatTime,
+  checkPhone: checkPhone
+}
+
