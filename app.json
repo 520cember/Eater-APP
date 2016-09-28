@@ -12,20 +12,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "pages/img/tab_icon.png",
-        "selectedIconPath": "pages/img/tab_select_icon.png"
+        "iconPath": "pages/img/home1.jpg",
+        "selectedIconPath": "pages/img/home.jpg"
       },
       {
         "pagePath": "pages/new/new",
         "text": "菜谱",
-        "iconPath": "pages/img/tab_icon.png",
-        "selectedIconPath": "pages/img/tab_select_icon.png"
+        "iconPath": "pages/img/book1.jpg",
+        "selectedIconPath": "pages/img/book.jpg"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "pages/img/tab_icon.png",
-        "selectedIconPath": "pages/img/tab_select_icon.png"
+        "iconPath": "pages/img/mine1.jpg",
+        "selectedIconPath": "pages/img/mine.jpg"
       }
     ]
   },
