@@ -1,3 +1,5 @@
+##效果图
+[效果图地址](http://blog.csdn.net/y1258429182/article/details/52696000)
 ##实现的功能
 1. 实现了网络请求
 2. 实现了上拉刷新，下拉加载更多
@@ -11,8 +13,6 @@
 ##End
 **我的QQ群361555964**
 **欢迎Follow，Star！！！**
-
-[我的CSDN博客地址](http://blog.csdn.net/y1258429182/article/details/52676742)
 
 ----------
 
