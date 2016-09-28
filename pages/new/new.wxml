@@ -1,0 +1,14 @@
+
+<loading hidden="{{loading}}">
+  加载中...
+</loading>
+
+<scroll-view  style="height: {{windowHeight}}px; width: {{windowWidth}}px;" scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad" >
+  <navigator url="../newDetail/newDetail?id={{item.menuId}}" redirect="false" wx:for="{{caiItems}}" hover-class="navigator-hover">
+      <view class="test_item">
+      <image class="item_img" src="{{item.thumbnail}}" mode="scaleToFill"></image>
+      <text class="item_content">{{item.name}}</text>
+      </view>
+ </navigator>
+</scroll-view>
+
