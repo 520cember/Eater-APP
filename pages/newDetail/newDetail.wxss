@@ -1,18 +1,19 @@
-.main_content{
+.detail_item{
     display: flex;
     flex-direction: column;
-    align-items: center, 
+    align-items: center;
 }
-.item_img{
+
+.detail_item image{
     width: 200px;
     height: 200px;
     clear: both;
     display: block;
-    margin: 20px auto; 
+    margin: 20px auto;
 }
-.item_part{
-    margin-top: 30px;
-}
-.item_summary{
-    margin-top: 30px;
+.detail_item text{
+    margin-top: 10rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    margin-bottom: 30rpx;
 }

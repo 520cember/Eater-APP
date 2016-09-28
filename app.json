@@ -8,6 +8,10 @@
     "pages/newDetail/newDetail"
   ],
   "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -33,6 +37,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   }
 }

@@ -1,14 +1,20 @@
+<scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore"
+             bindscrolltoupper="refresh"
+             style="height: {{windowHeight}}px; width: {{windowWidth}}px;"
+             >
 
-<loading hidden="{{loading}}">
-  加载中...
-</loading>
-
-<scroll-view  style="height: {{windowHeight}}px; width: {{windowWidth}}px;" scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad" >
-  <navigator url="../newDetail/newDetail?id={{item.menuId}}" redirect="false" wx:for="{{caiItems}}" hover-class="navigator-hover">
-      <view class="test_item">
-      <image class="item_img" src="{{item.thumbnail}}" mode="scaleToFill"></image>
-      <text class="item_content">{{item.name}}</text>
-      </view>
- </navigator>
+    <!--对于ListView总结就是，navigator外一层布局，然后navigator里边只有一个组件-->
+    <view wx:for="{{caiItems}}">
+        <navigator url="../newDetail/newDetail?id={{item.menuId}}">
+            <view class="item">
+                <image  src="{{item.thumbnail}}" mode="scaleToFill"></image>
+                <text >{{item.name}}</text>
+            </view>
+        </navigator>
+    </view>
+    <view class="tips">
+        <view wx:if="{{hasMore}}"><image src="../img/loading.gif" mode="aspectFill"/><text>玩了命的加载中...</text></view>
+        <!--<view wx:else><text>没有更多内容了</text></view>-->
+    </view>
 </scroll-view>
-
+<loading hidden="{{loading}}">加载中...</loading>
