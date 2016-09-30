@@ -7,8 +7,6 @@ Page({
         caiItems: [],
         loading: true,
         hasMore: false,
-        windowHeight: 0,
-        windowWidth: 0,
         page: 1
     },
     onLoad: function () {
@@ -51,17 +49,5 @@ Page({
         })
     },
 
-    //////////////////////////////////////下拉刷新上拉加载更多的代码////////////////////////////////////////////
-    onShow: function () {
-        wx.getSystemInfo({
-            success: (res) => {
-                this.setData({
-                    windowHeight: res.windowHeight,
-                    windowWidth: res.windowWidth
-                })
-            }
-        })
-    },
-    //////////////////////////////////////下拉刷新上拉加载更多的代码////////////////////////////////////////////
 
 })
