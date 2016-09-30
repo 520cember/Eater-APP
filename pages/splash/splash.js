@@ -12,30 +12,31 @@ var page = {
         var animation = wx.createAnimation({
             duration: 1000,
             timingFunction: 'ease-in-out',
-            transformOrigin: "0% 100%",
+            transformOrigin: "50% 50%",
         })
 
-        this.animatin = animation
+        this.animation = animation
 
-        animation.scale(0.5, 0.5).opacity(1).step()
+        animation.scale(1).opacity(0).step()
 
         this.setData({
             animationData: animation.export(),
         })
 
         setTimeout(function () {
-            animation.scale(1, 1).step()
+            animation.scale(1, 1).opacity(1).step()
             this.setData({
                 animationData: animation.export(),
             })
         }.bind(this), 1000)
 
-    },
-    //点击的方法
-    skipToMain: function () {
-        wx.navigateTo({
-            url: '../login/login?id=1'
-        })
+        setTimeout(function(){
+        	wx.navigateTo({
+	            url: '../index/index'
+	        })
+        },3000)
+        
+
     }
 
 }
