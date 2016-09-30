@@ -1,4 +1,5 @@
 ##效果图
+  ![image/preview.gif](pages/img/preview.gif)
 [效果图地址](http://blog.csdn.net/y1258429182/article/details/52696000)
 ##实现的功能
 1. 实现了网络请求
